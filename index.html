@@ -23,20 +23,20 @@
   <script>
 const arr= [{"spell":"siphon strike", "champion":"nasus", "mana": 10}, {"spell":'wither', "champion":"nasus", "mana": 80} , {"spell":"spirit fire", "champion":"nasus", "mana": 70}];
 var arrayLength = arr.length;
-var table = document.createElement('table');
+var newTable = document.createElement('table');
 
    for (i = 0; i < arrayLength; i++) {
-  var row = table.insertRow(0);
-  var spellCell = row.insertCell(0);
+  var row = newTable.insertRow(-1);
+  var spellCell = row.insertCell(-1);
   spellCell.appendChild(document.creatTextNode(arr[i].spell));
-  var championCell = row.insertCell(1);
+  var championCell = row.insertCell(-1);
   championCell.appendChild(document.creatTextNode(arr[i].champion));
-  var manaCell = row.insertCell(2);
+  var manaCell = row.insertCell(-1);
   manaCell.appendChild(document.createTextNode(arr[i].mana));
-  table.style.color ="pink";
-  table.style.fontWeight ="900";
-  table.style.height ="50px";
-  document.body.appendChild(table);
+  newTable.style.color ="pink";
+  newTable.style.fontWeight ="900";
+  newTable.style.height ="50px";
+  document.body.appendChild(newTable);
 } </script>
   </body>
   
