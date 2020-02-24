@@ -26,7 +26,7 @@ var arrayLength = arr.length;
 var table;
 
 for (i = 0; i < arrayLength; i++) {
- var table = document.createElement('div');
+ var table = document.createElement('table');
   var row = table.insertRow(-1);
   var spellCell = row.insertCell(-1);
   spellCell.appendChild(document.creatTextNode(arr[i].spell));
@@ -34,9 +34,7 @@ for (i = 0; i < arrayLength; i++) {
   championCell.appendChild(document.creatTextNode(arr[i].champion));
   var manaCell = row.insertCell(-1);
   manaCell.appendChild(document.createTextNode(arr[i].mana));
-  table.className = 'results';
-  table.innerHTML = arr[i];
-  table.style.color ="pink";
+  .style.color ="pink";
   table.style.fontWeight ="900";
   table.style.height ="50px";
   document.body.appendChild(table);
