@@ -27,12 +27,12 @@ var temp;
 
 for (i = 0; i < arrayLength; i++) {
   temp = document.createElement('div');
-  temp = div.insertRow(-1);
-  var spellCell = temp.insertCell(-1);
+  row = temp.insertRow(-1);
+  var spellCell = row.insertCell(-1);
   spellCell.appendChild(document.creatTextNode(arr[i].spell));
-  var championCell = temp.insertCell(-1);
+  var championCell = row.insertCell(-1);
   championCell.appendChild(document.creatTextNode(arr[i].spell));
-  var manaCell = temp.insertCell(-1);
+  var manaCell = row.insertCell(-1);
   manaCell.appendChild(document.createTextNode(arr[i].spell));
   temp.className = 'results';
   temp.innerHTML = arr[i];
