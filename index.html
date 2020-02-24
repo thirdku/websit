@@ -26,12 +26,12 @@ var arrayLength = arr.length;
 var table = document.createElement('table');
 
    for (i = 0; i < arrayLength; i++) {
-  var row = table.insertRow(-1);
-  var spellCell = row.insertCell(-1);
+  var row = table.insertRow(0);
+  var spellCell = row.insertCell(0);
   spellCell.appendChild(document.creatTextNode(arr[i].spell));
-  var championCell = row.insertCell(-1);
+  var championCell = row.insertCell(1);
   championCell.appendChild(document.creatTextNode(arr[i].champion));
-  var manaCell = row.insertCell(-1);
+  var manaCell = row.insertCell(2);
   manaCell.appendChild(document.createTextNode(arr[i].mana));
   table.style.color ="pink";
   table.style.fontWeight ="900";
