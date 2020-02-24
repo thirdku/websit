@@ -21,13 +21,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script>
 
-var spellschamp = [
+
+var spellDetails = [
 { "spell":"siphon strike" , "champion":"nasus" , "mana":10}, 
 { "spell":"wither" , "champion":"nasus" , "mana":70}, 
 { "spell":"spirit fire" , "champion": "nasus" ,"mana":80}
 ];
 var table = document.createElement("table");
-for (var i = 0; i < spellschamp.length; i++) {
+for (var i = 0; i < spellDetails.length; i++) {
   var row = table.insertRow(-1);
   var spellCell = row.insertCell(-1);
   spellCell.appendChild(document.createTextNode(employees[i].spell));
@@ -36,10 +37,8 @@ for (var i = 0; i < spellschamp.length; i++) {
   var manaCell = row.insertCell(-1);
   manaCell.appendChild(document.createTextNode(employees[i].mana));
 }
+table.style.color ="pink";
 document.body.appendChild(table);
-  table.style.color ="pink";
-  table.style.fontWeight ="900";
-  table.style.height ="50px";
 } </script>
   </body>
   
