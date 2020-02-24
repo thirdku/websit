@@ -31,13 +31,11 @@ var table = document.createElement("table");
 for (var i = 0; i < spellDetails.length; i++) {
   var row = table.insertRow(-1);
   var spellCell = row.insertCell(-1);
-  spellCell.appendChild(document.createTextNode(employees[i].spell));
+  spellCell.appendChild(document.createTextNode(spellDetails[i].spell));
   var championCell = row.insertCell(-1);
-  championCell.appendChild(document.createTextNode(employees[i].champion));
+  championCell.appendChild(document.createTextNode(spellDetails[i].champion));
   var manaCell = row.insertCell(-1);
-  manaCell.appendChild(document.createTextNode(employees[i].mana));
-}
-table.style.color ="pink";
+  manaCell.appendChild(document.createTextNode(spellDetails[i].mana));
 document.body.appendChild(table);
 } </script>
   </body>
