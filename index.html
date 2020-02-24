@@ -36,7 +36,9 @@ for (var i = 0; i < spellDetails.length; i++) {
   championCell.appendChild(document.createTextNode(spellDetails[i].champion));
   var manaCell = row.insertCell(-1);
   manaCell.appendChild(document.createTextNode(spellDetails[i].mana));
-document.body.appendChild(table);
+table.style.height ="20px";
+  table.style.fontWeight ="900";
+  document.body.appendChild(table);
 } </script>
   </body>
   
