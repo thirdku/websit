@@ -41,3 +41,5 @@ class App extends React.Component{
 
 
 export default App
+let domContainer = document.querySelector('#cat')
+ReactDOM.render(<App />, domContainer);
