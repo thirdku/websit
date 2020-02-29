@@ -21,7 +21,7 @@ class App extends React.Component{
      }
       
     render(){
-        return (<div>
+        return e(<div>
         <h1>To Do List</h1>
              <ToDoList text={this.state.text}/>
              <form onSubmit={this.handleSubmit}>
@@ -39,6 +39,6 @@ class App extends React.Component{
 };
 
 
-export default App
+
 const domContainer = document.querySelector('#cat');
 ReactDOM.render(e(App), domContainer);
