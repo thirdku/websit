@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ToDoList from "./todolists";
-
+const e = React.createElement;
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -38,6 +38,6 @@ class App extends React.Component{
     }
 };
 
-
-ReactDOM.render<App/>,  document.getElementById('cat');
+const domContainer = document.querySelector('#cat');
+ReactDOM.render(e(App), domContainer);
 export default App
