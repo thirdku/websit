@@ -38,5 +38,6 @@ class App extends React.Component{
     }
 };
 
-const domContainer = document.querySelector('#cat');
-ReactDOM.render(e(App), domContainer);
+
+ReactDOM.render<App/>,  document.getElementById('cat');
+export default App
