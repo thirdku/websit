@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ToDoList from "./todolists";
-const e = React.createElement;
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -21,7 +20,7 @@ class App extends React.Component{
      }
       
     render(){
-        return e(<div>
+        return (<div>
         <h1>To Do List</h1>
              <ToDoList text={this.state.text}/>
              <form onSubmit={this.handleSubmit}>
@@ -40,5 +39,5 @@ class App extends React.Component{
 
 
 
-const domContainer = document.querySelector('#cat');
-ReactDOM.render(e(App), domContainer);
+
+export default App
