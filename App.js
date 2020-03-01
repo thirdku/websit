@@ -45,4 +45,4 @@ ReactDOM.render(
   <App />,
   document.getElementById('cat')
 );
-export default App
+export default App;
